@@ -13,8 +13,8 @@ if (!defined('_ECRIRE_INC_VERSION')) return;
  */
 function iview_declarer_tables_interfaces($interfaces) {
 
-	$interfaces['table_des_tables']['slides'] = 'slides';
 	$interfaces['table_des_tables']['slideshows'] = 'slideshows';
+	$interfaces['table_des_tables']['slides'] = 'slides';
 
 	return $interfaces;
 }
@@ -24,6 +24,25 @@ function iview_declarer_tables_interfaces($interfaces) {
  * Déclaration des objets éditoriaux
  */
 function iview_declarer_tables_objets_sql($tables) {
+
+	$tables['spip_slideshows'] = array(
+		'type' => 'slideshow',
+		'principale' => "oui",
+		'field'=> array(
+			"id_slideshow"       => "bigint(21) NOT NULL",
+			"titre"              => "text NOT NULL DEFAULT ''",
+			"maj"                => "TIMESTAMP"
+		),
+		'key' => array(
+			"PRIMARY KEY"        => "id_slideshow",
+		),
+		'titre' => "titre AS titre, '' AS lang",
+		 #'date' => "",
+		'champs_editables'  => array('titre'),
+		'champs_versionnes' => array(),
+		'rechercher_champs' => array("titre" => 8),
+		'tables_jointures'  => array()
+	);
 
 	$tables['spip_slides'] = array(
 		'type' => 'slide',
@@ -62,27 +81,6 @@ function iview_declarer_tables_objets_sql($tables) {
 			)
 		),
 		'texte_changer_statut' => 'slide:texte_changer_statut_slide', 
-		
-
-	);
-
-	$tables['spip_slideshows'] = array(
-		'type' => 'slideshow',
-		'principale' => "oui",
-		'field'=> array(
-			"id_slideshow"       => "bigint(21) NOT NULL",
-			"titre"              => "text NOT NULL DEFAULT ''",
-			"maj"                => "TIMESTAMP"
-		),
-		'key' => array(
-			"PRIMARY KEY"        => "id_slideshow",
-		),
-		'titre' => "titre AS titre, '' AS lang",
-		 #'date' => "",
-		'champs_editables'  => array('titre'),
-		'champs_versionnes' => array(),
-		'rechercher_champs' => array("titre" => 8),
-		'tables_jointures'  => array(),
 		
 
 	);

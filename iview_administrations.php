@@ -53,6 +53,7 @@ function iview_upgrade($nom_meta_base_version, $version_cible) {
 		'controlNavTooltip' => 'true',
 		'effet_caption' => 'fade',
 		'vitesse_caption' => 500,
+		'opacite_caption' => 0.9,
 		'posX_caption' => 70,
 		'posY_caption' => 70,
 		'timer' => 'pie',
