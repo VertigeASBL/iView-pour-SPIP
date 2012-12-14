@@ -76,7 +76,7 @@ function iview_insert_head($flux) {
 /* On ajoute les CSS */
 function iview_insert_head_css($flux) {
 	$flux .= '<link rel="stylesheet" href="'.find_in_path('css/iview.css').'" type="text/css" media="screen" />';
-	$flux .= '<link rel="stylesheet" href="'.find_in_path('css/skin_1/style_iview.css').'" type="text/css" media="screen" />';
+	$flux .= '<link rel="stylesheet" href="'.find_in_path('css/style_iview.css').'" type="text/css" media="screen" />';
 
 	return $flux;
 }
