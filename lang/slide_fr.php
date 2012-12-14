@@ -18,7 +18,7 @@ $GLOBALS[$GLOBALS['idx_lang']] = array(
 	'info_slides_auteur' => 'Les slides de cet auteur',
 
 	// L
-	'label_drescriptif' => 'Drescriptif',
+	'label_descriptif' => 'Descriptif',
 	'label_titre' => 'Titre',
 
 	// R
