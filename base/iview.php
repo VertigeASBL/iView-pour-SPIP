@@ -60,9 +60,9 @@ function iview_declarer_tables_objets_sql($tables) {
 		),
 		'titre' => "titre AS titre, '' AS lang",
 		 #'date' => "",
-		'champs_editables'  => array('titre', 'drescriptif'),
+		'champs_editables'  => array('titre', 'descriptif'),
 		'champs_versionnes' => array(),
-		'rechercher_champs' => array("titre" => 8, "drescriptif" => 3),
+		'rechercher_champs' => array("titre" => 8, "descriptif" => 3),
 		'tables_jointures'  => array('spip_slides_liens'),
 		'statut_textes_instituer' => array(
 			'prepa'    => 'texte_statut_en_cours_redaction',
