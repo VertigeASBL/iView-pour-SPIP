@@ -1,3 +1,9 @@
+/*
+*	Ce fichier CSS est le "main" il assure le bon fonctionnement du slider
+*	A manipuler avec précaution !
+*/
+
+
 /* The slider */
 .iviewSlider {
 	overflow: hidden;
