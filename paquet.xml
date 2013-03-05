@@ -16,7 +16,7 @@
 	<nom>iView pour SPIP</nom>
 
 	<!-- cette balise peut être présente plusieurs fois s'il y a plusieurs auteurs --> 
-	<auteur lien='http://www.phenix-factory.net'>Phenix</auteur>
+	<auteur lien='http://p.henix.be'>Phenix</auteur>
 
 	<licence>GNU/GPL</licence>
 
