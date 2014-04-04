@@ -1,0 +1,5 @@
+<div class="ajax">
+  [(#ENV{objet}|=={slideshow}|non)
+  	#FORMULAIRE_EDITER_LIENS{#ENV{table_source},#ENV{objet},#ENV{id_objet},#ENV{editable}|=={non}|?{'',' '}}
+  ]
+</div>
