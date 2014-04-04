@@ -41,6 +41,7 @@
 
 	<necessite nom="saisies" compatibilite="[1.24.0;]" />
 	<necessite nom="Palette" compatibilite="[3.0.1;]" />
+	<necessite nom="saisie_liste" compatibilite="[1.1.0;]" />
 
 	<pipeline nom="autoriser" inclure="iview_autorisations.php" /> 
 
